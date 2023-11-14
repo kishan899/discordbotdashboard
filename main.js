@@ -1,4 +1,4 @@
-import { navbar } from './pages/scripts/others.js'
+import { navbar } from '/pages/scripts/others.js'
 navbar();
 ScrollReveal({
   reset: true,
