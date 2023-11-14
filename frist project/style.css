@@ -1,0 +1,331 @@
+@font-face {
+    font-family: myfont;
+    src: url("/font/Poppins-Medium.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: "myfont";
+    background-image: url('/assest/background.jpg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid white;
+    z-index: 999;
+}
+
+.navbar .left {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 1rem 1rem;
+}
+
+.navbar .left img {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    filter: drop-shadow(1px 1px 7px lightseagreen);
+}
+
+.navbar .left h1 {
+    font-size: 20px;
+    font-family: "myfont";
+    color: white;
+
+}
+
+.navbar .right {
+    display: flex;
+    justify-content: right;
+    width: 50%;
+    list-style: none;
+    align-items: center;
+    padding: 1rem 1rem;
+
+}
+
+.navbar .right a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .right li {
+    margin-left: 15px;
+    font-size: 0.8rem;
+}
+
+.navbar .arrow {
+    display: none;
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+
+}
+
+.navbar .right i {
+    color: white;
+    font-size: 17px;
+    margin: 6px;
+}
+
+.navbar a:hover {
+    color: rgb(4, 150, 89);
+}
+
+.navbar i:hover {
+    color: rgb(4, 150, 89);
+}
+
+.option i {
+    color: white;
+    font-size: 150%;
+    margin: 6px;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar .right a {
+        display: none;
+        text-decoration: none;
+        color: white;
+    }
+
+    .navbar .arrow {
+        display: block;
+        font-size: 20px;
+        font-weight: bolder;
+        color: white;
+        transition: all 0.35s;
+    }
+}
+
+.option {
+    position: absolute;
+    display: none;
+    width: 100%;
+    padding: 60px 25px 20px 25px;
+    list-style: none;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid white;
+    transition: all 0.35s;
+    z-index: 5;
+}
+
+.option a {
+    text-decoration: none;
+    color: white;
+}
+
+.option li {
+    margin-top: 100px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 0.7rem;
+    margin-top: 10px;
+}
+
+.option a:hover {
+    color: rgb(4, 150, 89);
+}
+
+.option i:hover {
+    color: rgb(4, 150, 89);
+}
+
+.main {
+    width: 100%;
+    background-image: url('/assest/background.jpg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.botprofile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+    transition: all 0.5s ease;
+}
+
+.botprofile img {
+    margin-top: 80px;
+    width: 200px;
+    height: 200px;
+}
+
+.botprofile h1 {
+    font-size: 8vw;
+    color: white;
+}
+
+.botprofile p {
+    font-size: 2vw;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.botprofile p span {
+    color: rgb(3, 134, 84);
+}
+
+.botprofile a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 1.5vw 5vw;
+    margin-top: 10px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: all 1s ease;
+}
+
+.botprofile a:hover {
+    background-color: #fff;
+    color: rgb(4, 150, 89);
+    border: 2px solid rgb(4, 150, 89);
+}
+
+.botprofile i {
+    font-size: 1.8rem;
+    margin: 5px 5px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: transparent;
+}
+
+.features h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.feature {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    margin-bottom: 30px;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    transform: scale(0.9);
+}
+
+.feature .left {
+    width: 500px;
+    padding: 30px;
+}
+
+.feature .left h2 {
+    font-family: "myfont";
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.feature .left p {
+    font-size: 13px;
+    font-family: "myfont";
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.603);
+    font-family: sans-serif;
+    margin-left: 15px;
+    transition: all 0.5s ease;
+}
+
+.feature .right {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.feature .right img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+.feature:hover{
+    transform: scale(1);
+    background-color: rgb(24, 170, 85);
+}
+.footer {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    background: inherit;
+}
+
+.footer .left {
+    align-items: center;
+    width: 50%;
+    padding: 10px 20px;
+}
+
+.footer .left h2 {
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.footer .left p {
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer .left a {
+    text-decoration: none;
+    color: lightseagreen;
+}
+
+.footer .right {
+    position: relative;
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+.footer .right i {
+    position: absolute;
+    color: white;
+    right: 0;
+    padding-right: 20px;
+    font-size: 20px;
+}
