@@ -1,0 +1,22 @@
+{
+    "contactinfo": [
+        {
+            "name": "Instagram",
+            "description": "COntact to me on this social media.",
+            "link" : "https://kishan.live/public",
+            "image" : "../../assest/instagram.png"
+        },
+        {
+            "name": "Instagram",
+            "description": "COntact to me on this social media.",
+            "link" : "https://kishan.live/public",
+            "image" : "../../assest/instagram.png"
+        },
+        {
+            "name": "Instagram",
+            "description": "COntact to me on this social media.",
+            "link" : "https://kishan.live/public",
+            "image" : "../../assest/instagram.png"
+        }
+    ]
+}

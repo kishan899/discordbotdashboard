@@ -1,0 +1,514 @@
+@font-face {
+    font-family: myfont;
+    src: url("/font/Poppins-Medium.ttf");
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: "myfont";
+    background-color: #272934;
+
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid white;
+    z-index: 999;
+}
+
+.navbar .left {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 1rem 1rem;
+}
+
+.navbar .left img {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    filter: drop-shadow(1px 1px 7px lightseagreen);
+}
+
+.navbar .left h1 {
+    font-size: 20px;
+    font-family: "myfont";
+    color: white;
+
+}
+
+.navbar .right {
+    display: flex;
+    justify-content: right;
+    width: 50%;
+    list-style: none;
+    align-items: center;
+    padding: 1rem 1rem;
+
+}
+
+.navbar .right a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.navbar .right li {
+    margin-left: 15px;
+    font-size: 0.8rem;
+    font-family: "myfont";
+}
+
+.navbar .arrow {
+    display: none;
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+}
+
+.navbar .right i {
+    color: white;
+    font-size: 17px;
+    margin: 6px;
+}
+.navbar .right .leftbtn{
+    display: none;
+}
+.navbar a:hover {
+    color: rgb(4, 150, 89);
+}
+
+.navbar i:hover {
+    color: rgb(4, 150, 89);
+}
+
+.option i {
+    color: white;
+    font-size: 150%;
+    margin: 6px;
+}
+
+
+
+.option {
+    position: absolute;
+    display: none;
+    width: 100%;
+    padding: 60px 25px 20px 25px;
+    list-style: none;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid white;
+    transition: all 0.35s;
+    z-index: 5;
+}
+
+.option a {
+    text-decoration: none;
+    color: white;
+}
+
+.option li {
+    margin-top: 100px;
+    font-family: sans-serif;
+
+    font-size: 0.7rem;
+    margin-top: 10px;
+}
+
+.option a:hover {
+    color: rgb(4, 150, 89);
+}
+
+.option i:hover {
+    color: rgb(4, 150, 89);
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 55px);
+    background-image: url('/assest/background.jpg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    padding-top: 100px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border-right: 2px solid rgba(255, 255, 255, 0.233);
+    transition: all 0.5s ease;
+}
+@media screen and (max-width: 992px) {
+    .navbar .right a {
+        display: none;
+        text-decoration: none;
+        color: white;
+    }
+
+    .navbar .arrow {
+        display: block;
+        font-size: 30px;
+        font-weight: 900;
+        margin: 5px;
+        color: white;
+        transition: all 0.35s;
+    }
+    .navbar .right .leftbtn{
+        display: block;
+        font-size: 25px;
+        font-weight: 800;
+        transition: all 0.5s ease;
+    }
+    .main .left {
+        transform: translateX(-1000px);
+    }
+    .main .left{
+        width: 100%;
+    }
+}
+.main .left h2 {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin: 10px 0px 40px 0px;
+}
+
+.main .left i {
+    color: rgb(24, 170, 85);
+    font-size: 50px;
+}
+
+.main .left .search {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main .left .search_field {
+    border: none;
+    font-size: 100%;
+    outline: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.164);
+    padding-left: 20px;
+    color: white;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.200);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.200);
+}
+
+.main .left .button {
+    display: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.164);
+    color: white;
+    font-size: 20px;
+    padding-right: 10px;
+    font-weight: 900;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.main .left .search_field:focus {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transition: all 0.5s ease;
+}
+
+.cmdcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    width: 100%;
+}
+
+.searchedcmd {
+    width: 90%;
+    border-radius: 10px;
+    background-color: #1f2129;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.searchedcmd h1 {
+    font-size: 1rem;
+    color: white;
+    padding: 15px;
+}
+
+.searchedcmd p {
+    color: white;
+    font-size: 0.7rem;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.349);
+    pointer-events: none;
+    cursor: default;
+}
+
+.searchedcmd:hover {
+    background-color: rgb(0, 185, 129);
+}
+
+.searchedcmd:active {
+    transform: scale(0.9);
+    background-color: rgb(24, 170, 85);
+}
+
+.main .left .leftshow {
+    overflow: auto;
+    width: 100%;
+    max-height: 1000px;
+}
+
+.main .left .leftshowhead {
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.267);
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.main .left .leftshowhead i {
+    font-size: 1.5rem;
+    color: rgb(24, 170, 85);
+}
+
+.main .left .leftshowhead p {
+    font-size: 2rem;
+    color: rgb(24, 170, 85);
+    margin-left: 7px;
+
+
+}
+
+.main .left .category {
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    background-color: #1f2129;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.main .left .category:hover {
+    flex-grow: 10;
+    transition: all 0.3s ease;
+    background-color: rgb(0, 185, 129);
+}
+
+.main .left .category:active {
+    transform: scale(0.9);
+}
+
+.main .left .category i {
+    color: white;
+    font-size: 1rem;
+    margin: 7px;
+}
+
+.main .left .category p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+.main .right {
+    overflow: scroll;
+    width: 70%;
+    padding-top: 60px;
+}
+
+.right .allcatcmd {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.right .allcatcmd h1 {
+    width: 100%;
+    font-size: 2rem;
+    color: rgb(0, 185, 129);
+    background-color: #1f2129;
+    padding-left: 20px;
+    border-bottom: 1px solid white;
+    transition: all 0.3s ease;
+}
+
+.right .allcatcmd .cardscmd {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(0, 185, 129);
+    transition: all 0.3s ease;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-1000px);
+        filter: blur(10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+.right .allcatcmd .cardscmd:hover {
+    background-color: rgb(0, 185, 129);
+    border: 1px solid white;
+    flex-grow: 0.2;
+    box-shadow: 1px 1px 10px rgb(57, 206, 161);
+}
+
+.right .allcatcmd .cardscmd h2 {
+    font-size: 1rem;
+    color: white;
+    padding-left: 5px;
+}
+
+.right .allcatcmd .cardscmd p {
+    font-size: 12px;
+    color: white;
+    letter-spacing: 1px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #1f2129;
+    border-radius: 4px;
+}
+
+.right .allcatcmd .cardscmd span {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.right .cmdinfo {
+    width: 80%;
+    margin-top: 25vh;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid rgb(57, 206, 161);
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    animation: slide 1s ease;
+    transition: all 0.5s ease;
+}
+
+.right .cmdinfo h1 {
+    color: white;
+    font-size: 2rem;
+    border: none;
+    background: transparent;
+}
+
+.right .cmdinfo p {
+    color: rgba(255, 255, 255, 0.767);
+    font-size: 13px;
+    padding: 15px;
+    margin: 15px;
+    background-color: #1f2129;
+    border-radius: 5px;
+}
+.right .cmdinfo:hover {
+    background-color: rgb(0, 185, 129);
+    border: 1px solid white;
+    flex-grow: 0.2;
+    box-shadow: 1px 1px 10px rgb(57, 206, 161);
+}
+.right .cmdinfo span {
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #ddd;
+}
+
+.footer .left {
+    align-items: center;
+    width: 50%;
+    padding: 10px 20px;
+}
+
+.footer .left h2 {
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.footer .left p {
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer .left a {
+    text-decoration: none;
+    color: lightseagreen;
+}
+
+.footer .right {
+    position: relative;
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+.footer .right i {
+    position: absolute;
+    color: white;
+    right: 0;
+    padding-right: 20px;
+    font-size: 20px;
+}
