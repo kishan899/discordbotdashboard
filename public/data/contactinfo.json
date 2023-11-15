@@ -2,21 +2,27 @@
     "contactinfo": [
         {
             "name": "Instagram",
-            "description": "COntact to me on this social media.",
-            "link" : "https://kishan.live/public",
+            "description": "Contact with Instragram to get better communications.",
+            "link" : "https://instagram.com/k1ng_x_kishan?igshid=NzZlODBkYWE4Ng==",
             "image" : "../../assest/instagram.png"
         },
         {
-            "name": "Instagram",
-            "description": "COntact to me on this social media.",
+            "name": "Portifolio",
+            "description": "Connect with my portfolio to get all information about me.",
             "link" : "https://kishan.live/public",
-            "image" : "../../assest/instagram.png"
+            "image" : "../../assest/portfolio.png"
         },
         {
-            "name": "Instagram",
-            "description": "COntact to me on this social media.",
+            "name": "Github",
+            "description": "Check Out Our GitHub profile to get information about <b>Radeon</b> and for open source codes.",
             "link" : "https://kishan.live/public",
-            "image" : "../../assest/instagram.png"
-        }
+            "image" : "../../assest/github.png"
+        },
+       {
+           "name" : "Discord",
+           "discription" : "Join our discord server to contact with developers team.",
+           "link" : "https://discord.gg/VGuByrBbeC",
+           "image" : "../../assest/discord.png"
+}
     ]
 }
