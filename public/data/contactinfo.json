@@ -20,7 +20,7 @@
         },
        {
            "name" : "Discord",
-           "discription" : "Join our discord server to contact with developers team.",
+           "description": "Join our discord server to contact with developers team.",
            "link" : "https://discord.gg/VGuByrBbeC",
            "image" : "../../assest/discord.png"
 }
